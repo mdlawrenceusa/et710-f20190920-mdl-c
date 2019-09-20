@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html ng-app class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,7 +11,7 @@
       I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
 
      <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 
 
     <link rel="stylesheet" href="css/foundation.css">
@@ -37,6 +37,12 @@
 
 
     <!-- *Begin Angular JS Test -->
+    <div>
+     <label>Name:</label>
+     <input type="text" ng-model="yourName" placeholder="Enter a name here">
+     <hr>
+     <h1>Hello {{yourName}}!</h1>
+   </div>
     <!-- *End Angular JS Test -->
 
 
